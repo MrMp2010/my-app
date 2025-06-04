@@ -79,67 +79,6 @@ This command will launch the application in development mode. Your default web b
 Project Structure
 The project's main directory structure is organized as follows, providing a clear separation of concerns for different functionalities and components:
 
-my-app/
-├── public/
-│   ├── index.html           # The main HTML file that serves as the entry point for the React application.
-│   ├── manifest.json        # Web app manifest file, providing metadata for progressive web app features.
-│   └── robots.txt           # File that instructs web robots (e.g., search engine crawlers) about which pages to crawl or not.
-├── src/
-│   ├── component/
-│   │   ├── App/
-│   │   │   ├── App.js       # The root React component of the application, typically responsible for overall layout and routing.
-│   │   │   └── App.css      # Styles specific to the App component.
-│   │   └── Circle/
-│   │       ├── CirclePages.js # A central component likely responsible for managing routing and rendering main application pages.
-│   │       ├── Circle.css   # General styles for the Circle component or its sub-pages.
-│   │       └── pages/
-│   │           ├── page1/     # E-commerce section and general informational pages.
-│   │           │   ├── Page1.js
-│   │           │   ├── page1.css
-│   │           │   ├── components-for-page1/ # Reusable sub-components specific to Page1.
-│   │           │   │   ├── Cart.js          # Component for managing the shopping cart.
-│   │           │   │   ├── Cart.css
-│   │           │   │   ├── Footer.js        # Website footer component.
-│   │           │   │   ├── Footer.css
-│   │           │   │   ├── Navbar.js        # Navigation bar component.
-│   │           │   │   ├── Navbar.css
-│   │           │   │   ├── Product.js       # Component for displaying individual product details.
-│   │           │   │   └── ScrollToTop.js   # Utility component for scrolling to the top of the page.
-│   │           │   └── pages-of-1/ # Main pages within the Page1 section.
-│   │           │       ├── AboutPage.js     # "About Us" informational page.
-│   │           │       ├── AboutPage.css
-│   │           │       ├── ContactPage.js   # "Contact Us" informational page.
-│   │           │       ├── ContactPage.css
-│   │           │       ├── HomePage.js      # The main landing page of the website.
-│   │           │       ├── HomePage.css
-│   │           │       ├── LoginPage.js     # User login form.
-│   │           │       ├── LoginPage.css
-│   │           │       ├── ProductDetailPage.js # Page for detailed view of a single product.
-│   │           │       ├── ProductDetailPage.css
-│   │           │       ├── ProductsPage.js    # Page displaying a list of all products.
-│   │           │       └── ProductsPage.css
-│   │           ├── page2/     # Second main section, potentially for another product display or content type.
-│   │           │   ├── Page2.js
-│   │           │   └── Product.js           # Product component specific to Page2, if different from Page1's Product.js.
-│   │           └── page3/     # User authentication and management section.
-│   │               ├── Page3.js
-│   │               ├── Dashbord.js          # User dashboard component.
-│   │               ├── Home.js              # Home page for the user management section.
-│   │               ├── Input.js             # Reusable input field component.
-│   │               ├── LogOut.js            # Component for handling user logout.
-│   │               ├── Login.js             # User login form.
-│   │               ├── Navbar.js            # Navigation bar for the user management section.
-│   │               ├── Notfound.js          # 404 error page.
-│   │               ├── ProtectRoute.js      # Higher-order component or hook for protecting routes.
-│   │               ├── Register.js          # User registration form.
-│   │               ├── SkeletonLoading.js   # Component for displaying loading skeletons.
-│   │               ├── User.js              # Component for displaying individual user details.
-│   │               └── Users.js             # Component for displaying a list of users.
-│   └── index.js             # The main JavaScript file that renders the root React component into the DOM.
-├── package.json             # Contains project metadata, script commands, and a list of all project dependencies.
-├── package-lock.json        # Automatically generated file that records the exact versions of all dependencies and their sub-dependencies.
-└── db.json                  # A JSON file likely used for mock data or as a simple local database for development purposes.
-
 Usage
 Navigation: Utilize the main navigation bar (Navbar) to effortlessly switch between different sections and pages of the website, including the Home, Products, About Us, Contact Us, and Login/Register pages.
 
